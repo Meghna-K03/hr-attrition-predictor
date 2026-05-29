@@ -17,6 +17,7 @@ This project acts as a strategic analytics partnership with HR — moving beyond
 ---
 
 ## 📁 Project Structure
+
 hr-attrition-predictor/
 ├── employee.ipynb              # End-to-end analysis & ML pipeline (start here)
 ├── hr_raw.csv                  # Raw IBM HR dataset (1,470 employees, 35 features)
@@ -72,7 +73,9 @@ hr-attrition-predictor/
 - **StandardScaler** applied to numerical features before model training
 
 ### 2. Exploratory Data Analysis
+
 Investigated attrition patterns across key dimensions:
+
 Overtime        → 30.5% attrition (vs 10.4% without overtime)
 Sales Reps      → 39.8% attrition — highest of any role
 Monthly Income  → Leavers earn ~30% less ($4,787 vs $6,833 avg)
@@ -186,12 +189,13 @@ scaler = joblib.load("scaler.pkl")
 
 ## 📝 Dataset Credit
 
-IBM HR Analytics Employee Attrition & Performance — publicly available dataset used for educational and analytical purposes.
+IBM HR Analytics Employee Attrition & Performance — (https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).
 
 ---
 
 *Built as part of a Machine Learning Internship — People Analytics track.*
 
 
-Author
-Meghna-K
+## Author
+
+   Meghna-K
