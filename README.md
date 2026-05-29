@@ -1,10 +1,10 @@
-🏢 HR Attrition Predictor
+# 🏢 HR Attrition Predictor
 
 Machine Learning · People Analytics · Classification Project
 
 Predicting employee attrition using machine learning and turning workforce data into meaningful HR insights.
 
-📌 Overview
+ ## 📌 Overview
 
 Employee attrition is a major challenge for organizations because losing experienced employees affects productivity, hiring costs, and team stability.
 
@@ -12,7 +12,9 @@ This project uses Machine Learning and People Analytics to identify employees wh
 
 The model analyzes employee-related factors such as overtime, income, job role, travel frequency, job satisfaction, and years at the company to predict attrition risk.
 
-📁 Project Structure
+## Project Structure
+
+```
 hr-attrition-predictor/
 ├── employee.ipynb
 ├── hr_raw.csv
@@ -21,15 +23,17 @@ hr-attrition-predictor/
 ├── rf_attrition_model.pkl
 ├── scaler.pkl
 └── HR_Attrition_Report.docx
+```
 
 
-📊 Dataset
+## Dataset
+
 IBM HR Analytics Employee Attrition & Performance Dataset(https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
 1,470 employee records
 35 features
 Target variable: Attrition (Yes / No)
 
-Some important features used in the project:
+# Some important features used in the project:
 
 Age
 Monthly Income
@@ -44,7 +48,8 @@ Stock Option Level
 
 
 
-🔬 Project Workflow
+## Project Workflow:
+ 
 Data Preprocessing
 Removed duplicates and handled missing values
 Applied Label Encoding and One-Hot Encoding
@@ -53,7 +58,7 @@ Exploratory Data Analysis
 
 Performed analysis to understand attrition patterns across different employee groups.
 
-Some key observations:
+# Some key observations:
 
 Employees working overtime showed significantly higher attrition
 Sales Representatives had the highest attrition rate
@@ -73,21 +78,22 @@ Risk Analysis
 
 Generated attrition risk scores for employees and identified high-risk employee groups based on model predictions.
 
-🔑 Key Insights
+# Key Insights
 Overtime was one of the strongest indicators of attrition
 Employees with lower monthly income were more likely to leave
 Sales department showed higher attrition compared to other departments
 Early-tenure employees were at greater risk of leaving
 Frequent travelers showed higher churn patterns
 
-
-🚀 How to Run
+# How to Run
 Install Dependencies
+``` bash
 pip install pandas numpy scikit-learn matplotlib seaborn joblib jupyter
+```
 Run the Notebook
 jupyter notebook employee.ipynb
 
-🛠 Tech Stack
+# Tech Stack
 Tool	Purpose
 pandas	Data cleaning and analysis
 scikit-learn	Preprocessing and model building
@@ -95,14 +101,14 @@ matplotlib / seaborn	Data visualization
 joblib	Model saving/loading
 Jupyter Notebook	Development environment
 
-📄 Output Files
+# Output Files
 rf_attrition_model.pkl → Trained Random Forest model
 scaler.pkl → Saved scaler object
 at_risk_employees.csv → Employees flagged with high attrition risk
 HR_Attrition_Report.docx → Summary report with findings and recommendations
 
 
-📌 Business Impact
+3 Business Impact
 
 This project demonstrates how Machine Learning can support HR teams by:
 
@@ -111,7 +117,7 @@ Understanding major attrition drivers
 Supporting data-driven retention strategies
 Helping organizations reduce employee turnover costs
 
-📝 Dataset Credit
+# Dataset Credit
 
 IBM HR Analytics Employee Attrition & Performance Dataset from Kaggle(https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
 
